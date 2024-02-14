@@ -1,6 +1,6 @@
 import "./App.css";
 import Login from "./pages/Login/Login";
-// import Register from "./pages/Register/Register";
+import Register from "./pages/Register/Register";
 import Profile from "./pages/Profile/Profile";
 import Home from "./pages/Home/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -17,7 +17,7 @@ function App() {
           element={user ? <Profile /> : <Login />}
         />
         <Route path="/login" element={user ? <Home /> : <Login />} />
-        {/* <Route path="/register" element={<Register />} /> */}
+        <Route path="/register" element={<Register />} />
       </Routes>
     </BrowserRouter>
   );

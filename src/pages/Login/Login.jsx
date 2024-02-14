@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Login.css";
 import { useDispatch } from "react-redux";
 import { login } from "../../Redux/ApiCall";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -46,11 +46,11 @@ const Login = () => {
                 Login
               </button>
               <span className="forgetPass">Forget Password!</span>
-              {/* <Link to={"/register"} className="link"> */}
+              <Link to={"/register"} className="link">
               <button className="loginRegisterbtn">
                 Create a new Account!
               </button>
-              {/* </Link> */}
+              </Link>
             </div>
           </div>
         </div>
